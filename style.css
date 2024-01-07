@@ -1,0 +1,61 @@
+body{
+    background-image: url(./img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h3{
+    color: azure;
+}
+#form{
+    background-color: yellowgreen;
+    margin: 100px;
+    padding: 30px;
+    width: 100%px;
+
+
+}
+
+
+.main{
+    padding-top: 100px;
+    font-size: 80px;
+    color: chartreuse;
+    
+}
+.new{
+    padding-top: 0px;
+    padding-left: 40px;
+    margin: 40px;
+    color: aqua;
+}
+#home,#about,#contact,#help,#more{
+    color: white;
+    float: right;
+    padding-left: 15px;
+    font-size: 20px;
+
+}
+new1{
+    background-color: goldenrod;
+}
+.block{
+    display: inline-block;
+    width: 10%;
+    background-color: white;
+    margin: 40px;
+    padding: 30px;
+    
+}
+
+.block1{
+    display: inline-block;
+    width: 10%;
+    background-color: black;
+    margin: 40px;
+    padding: 20px;
+    color: aliceblue;
+
+}
+
