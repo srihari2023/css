@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<style>
+    #main{
+        display: flex;
+    }
+    #left-box{
+        background-color: white;
+        width: 300px;
+        height: 900px;
+    }
+    #right-box{
+        background-color: whitesmoke;
+        width: 100%;
+    }
+    #image-container{
+        display: flex;
+    }
+    #img1{
+        /* margin: 10px; */
+        margin-right: 1px;
+        margin-left: 15px;
+    }
+    #img1:hover {
+        opacity: 0.6;
+    }
+    #image-container p{
+        background-color: white;
+        position: relative;
+        top: -20px;
+
+    }
+    #image-container2{
+        display: flex;
+    }
+    #image-container2 p{
+        background-color: white;
+        position: relative;
+        top: -20px;
+
+    }
+    #top{
+        padding-bottom: 10px;
+    }
+    #top button{
+        padding: 15px; 
+        background-color: white;
+        border: 0px solid white;
+        
+    }
+    #top button:hover{
+        background-color: grey;
+    }
+    #top h1{
+        position: relative;
+        top: -30px;
+        margin: 20px;
+        margin-top: 40px;
+    }
+    #one{
+        width: 100%;
+        height: 5px;
+        background-color: rgba(128, 128, 128, 0.407);
+        border: opx solid white;
+        margin: 20px;
+        margin-right: 50px;
+    }
+    #mid{
+        justify-content: center;
+        padding: 70px;
+        margin-left: 500px;
+    } 
+    #mid button{
+        padding: 7px;
+    }
+    #mid button:hover{
+        background-color: black;
+        color: white;
+    }
+    #img-container3{
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+    #about{
+        margin: 20px;
+        padding-top: 8px;
+    }
+    #animation{
+        margin: 20px;
+        padding-top: 8px;
+    }
+    input{
+        width: 100%;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #animation button{
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        background-color: rgba(128, 128, 128, 0.667);
+    }
+    #animation button:hover{
+        background-color: rgba(211, 211, 211, 0.405);
+    }
+    #cards{
+        width: 1000px;
+        margin: 20px;
+       
+        
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+        opacity: 0.6;   
+    }
+    #cards:hover{
+        opacity: 1;
+    }
+    #first button{
+        padding: 10px;
+        margin-left: 100px;
+        padding-left:20px ;
+        padding-right: 20px;
+        background-color: rgb(30, 203, 203);
+    }
+    #second button{
+        padding: 10px;
+        margin-left: 100px;
+        padding-left:20px ;
+        padding-right: 20px;
+        background-color: rgb(30, 203, 203);
+    }
+    #third button{
+        padding: 10px;
+        margin-left: 100px;
+        padding-left:20px ;
+        padding-right: 20px;
+        background-color: rgb(30, 203, 203);
+    }
+    #cards div{
+        border: 1px solid black;
+        width: 300px;
+        height: 450px;
+    }
+    #cards h2{
+       /* position: relative; */
+       top: -20px;
+        /* padding-bottom: 60px; */
+        padding: 30px;
+        
+        color: white; 
+        margin-top: 0px;  
+    }
+    #cards p{
+        text-align: center;
+
+    }
+    #second h2{
+        background-color: aqua;
+        text-align: center;
+    }
+    #third h2{
+        background-color: black;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+    #first h2{
+        background-color: black;
+        text-align: center
+    }
+    #first p{
+        background-color:e ;
+        text-align: center;
+    }
+    
+    #photo{
+        width: 95%;
+        background-color: lightgray;
+        height: 30px;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    #inner{
+        width: 85%;
+        height: 30px;
+        background-color: grey;
+        text-align: center;
+
+    }
+    #photo1{
+        width: 85%;
+        background-color: lightgray;
+        height: 30px;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    #inner1{
+        width: 75%;
+        height: 30px;
+        background-color: grey;
+        text-align: center;
+        
+
+    }
+    #photo2{
+        width: 80%;
+        background-color: lightgray;
+        height: 30px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    #inner2{
+        width: 70%;
+        height: 30px;
+        background-color: grey;
+        text-align: center;
+
+    }
+    #contact{
+        background-color: darkgrey;
+        display: flex;
+        
+    }
+    #form{
+        background-color: darkgrey;
+        
+    }
+    #contact h2{
+        margin: 20px;
+        padding-top: 20px;
+        
+    }
+    #area{
+        display: flex;
+    }
+    #innera{
+        padding: 10px;
+        background-color: grey;
+        margin: 20px;
+        padding-left: 50px;
+    }
+    #innerb{
+        padding: 50px;
+        background-color: grey;
+        margin: 20px;
+    }
+    #innerc{
+        padding: 50px;
+        background-color: grey;
+        margin: 20px;
+    }
+    #form b{
+        margin: 20px;
+    }
+    #form input{
+        margin-left: 20px;
+    
+    }
+    #form button{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        background-color: black;
+        color: white;
+
+        
+    }
+    #form button:hover{
+        background-color:lightgray;
+        border: 1px solid lightgray;
+    }
+    #bottom{
+        background-color: darkgray;
+    }
+    #last-section{
+        background-color: #616161!important;
+        display: flex; 
+        padding-bottom: 30px;
+       
+    }
+    #fotter{
+     flex-wrap: wrap;
+     width: 350px;
+     margin-left: 80px;
+     margin-top: -20px;
+    }
+    #fotter h2{
+        padding-top: 40px;
+        padding-bottom: 10px;
+        color: white;  
+    }
+    #fotter p{
+        color: white;
+    }
+    #fotter a{
+        color: white;
+    }
+    #blog{
+        width: 350px;
+        margin-left: 40px;
+        color: white;
+    }
+    #blog p{
+        display: inline-block;
+        color: white;
+        margin-left: 10px;
+        top: opx;
+    }
+    #popular{
+        margin-left: 20px;
+    }
+   #popular h2{
+    color: white;
+    font-size: 30px;
+   }
+   #popular button{
+    background-color: darkgray;
+    margin-top: 20px;
+   }
+   #over{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+   }
+   #over a{
+    color: white;
+   }
+
+    
+        
+    
+    
+    
+</style>
+<body>
+    <div id="main">
+    <div id="left-box">
+        <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" width="150px">
+        <h2> PORTFOLIO</h2>
+        <h3 style="color: grey;">Template by w3.css</h3>
+        <h3 style="color: rgb(3, 62, 3); "><span class="material-symbols-outlined">
+            grid_view
+        </span>Portfolio</h3>
+        <h3><span class="material-symbols-outlined">
+            person
+            </span>ABOUT</h3>
+        <h3><span class="material-symbols-outlined">
+            mail
+            </span>CONTACT</h3>
+    </div>
+    <div id="right-box">
+        <div id="top">
+            <h1>My Portfolio</h1>
+            <span>Filter:</span>
+            <button style="color: white; background-color: black;">All</button>
+            <button> design</button>
+            <button>photos</button>
+            <button>Art</button>
+        </div><hr id="one">
+        <div id="image-container">
+            <div id="img1">
+            <img src="https://www.w3schools.com/w3images/mountains.jpg" width="400px"><br>
+            
+            <p ><b>Lorem Ipsum</b><br><br>
+            <b> Praesent tincidunt sed tellus ut rutrum. Sed vitae<br> 
+                justo condimentum, porta lectus vitae, ultricies<br>
+                 congue gravida diam non fringilla.</b></p>
+                 </div>
+                 <div id="img1">
+                    <img src="https://www.w3schools.com/w3images/lights.jpg" width="400px"><br>
+                    
+                    <p><b>Lorem Ipsum</b><br><br>
+                    <b> Praesent tincidunt sed tellus ut rutrum. Sed vitae<br> 
+                        justo condimentum, porta lectus vitae, ultricies<br>
+                         congue gravida diam non fringilla.</b></p>
+                         </div>
+                         <div id="img1">
+                            <img src="https://www.w3schools.com/w3images/nature.jpg" width="400px"><br>
+                            
+                            <p><b>Lorem Ipsum</b><br><br>
+                            <b> Praesent tincidunt sed tellus ut rutrum. Sed vitae<br> 
+                                justo condimentum, porta lectus vitae, ultricies<br>
+                                 congue gravida diam non fringilla.</b></p>
+                                 </div>
+        </div>
+        <div id="image-container2">
+            <div id="img1">
+                <img src="https://www.w3schools.com/w3images/p1.jpg" width="400px"><br>
+                <p><b>Lorem Ipsum</b><br><br>
+                <b> Praesent tincidunt sed tellus ut rutrum. Sed vitae<br> 
+                    justo condimentum, porta lectus vitae, ultricies<br>
+                     congue gravida diam non fringilla.</b></p>
+                     </div>
+                     <div id="img1">
+                        <img src="https://www.w3schools.com/w3images/p2.jpg" width="400px"><br>
+                        <p><b>Lorem Ipsum</b><br><br>
+                        <b> Praesent tincidunt sed tellus ut rutrum. Sed vitae<br> 
+                            justo condimentum, porta lectus vitae, ultricies<br>
+                             congue gravida diam non fringilla.</b></p>
+                             </div>
+                             <div id="img1">
+                                <img src="https://www.w3schools.com/w3images/p3.jpg" width="400px"><br>
+                                <p><b>Lorem Ipsum</b><br><br>
+                                <b> Praesent tincidunt sed tellus ut rutrum. Sed vitae<br> 
+                                    justo condimentum, porta lectus vitae, ultricies<br>
+                                     congue gravida diam non fringilla.</b></p>
+                                     </div> 
+                             
+                     
+        </div>
+        <div id="mid">
+            <button><a href="" ><<</a></button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>>></button>
+        </div>
+        <div id="img-container3">
+            <img src="https://www.w3schools.com/w3images/avatar_g.jpg" width="600px">
+            <img src="https://www.w3schools.com/w3images/me2.jpg" width="600px">
+        </div>
+        <div id="about">
+            <h2>About Me</h2>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+        <div id="animation">
+            <h3>Technical Skill</h3>
+            <b id="pad">Photography</b>
+          <div id="photo">
+            
+            <div id="inner">
+               95%
+            </div>
+          </div>
+          <b id="pad">Web Design</b>
+          <div id="photo1">
+              
+            <div id="inner1">
+               85%
+            </div>
+          </div>
+          <b id="pad">PhotoShop</b>
+          <div id="photo2">
+              
+            <div id="inner2">
+               80%
+            </div>
+          </div>
+
+        </div>
+        <h3>How Much I Charge</h3>
+        <div id="cards">
+            <div id="first">
+                <h2> Basic</h2>
+                <p>Web design</p><hr>
+                <p>Photography</p><hr>
+                <p>1 Gb storage</p><hr>
+                <p>Mail Support</p><hr>
+                <p>$ 10</p><br>
+                <button>sign up</button>
+            </div>
+            
+                <div id="second">
+                    <h2> Basic</h2>
+                    <p>Web design</p><hr>
+                    <p>Photography</p><hr>
+                    <p>1 Gb storage</p><hr>
+                    <p>Mail Support</p><hr>
+                    <p>$ 10</p><br>
+                    <button>sign up</button>
+                </div>
+                
+                    <div id="third">
+                        <h2> Basic</h2>
+                        <p>Web design</p><hr>
+                        <p>Photography</p><hr>
+                        <p>1 Gb storage</p><hr>
+                        <p>Mail Support</p><hr>
+                        <p>$ 10</p><br>
+                        <button>sign up</button>
+                    </div>
+        </div>
+        <div id="bottom">
+        <div id="contact">
+             <div><h2>Contact Me</h2></div><br>
+             <div id="area"><div id="innera">email@email.com</div>
+              <div id="innerb">Chicago.us</div>
+              <div id="innerc">51232122</div></div></div><hr>
+              <div id="form">
+              <form action="">
+                <b>Name</b>
+                <input type="text" width="100%">
+                <b>Email</b>
+                <input type="text" width="100%">
+               <b>message</b>
+                <input type="text" width="100%">
+                <button>Send Message</button>
+              </form>
+        </div>
+        </div>
+        <div id="last-section">
+            <div id="fotter">
+                <h2>FOOTER</h2>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+               <p> powered by <a href="">w3.css</a></p>
+            </div>
+            <div id="blog">
+                <h2>BLOG POST</h2>
+                <img src="https://www.w3schools.com/w3images/workshop.jpg" width="50px">
+               <p> Loreum <br>
+                Sed mattis nunc</p><hr>
+                <img src="https://www.w3schools.com/w3images/gondol.jpg" width="50px">
+                <p>Ipsum <br>
+                 Praes tinci sed</p>
+            </div>
+            <div id="popular">
+               <h2>Popular Tags</h2>
+               <button style="color: white; background-color: black;">Travel</button>
+               <button>New york</button>
+               <button>London</button>
+               <button>Ikey</button>
+               <button>Norway</button>
+               <button>Diy</button><br>
+               <button>Ideas</button>
+               <button>Baby</button>
+               <button>Family</button>
+               <button>News</button>
+               <button>Clothing</button>
+               <button>Shopping</button><br>
+               <button>Sports</button>
+               <button>Games</button>
+            </div>
+        </div>
+        <div id="over">
+            <p>powered by <a href="">W3.css</a></p>
+
+        </div>
+
+
+    </div>
+
+    </div>
+</body>
+</html>
